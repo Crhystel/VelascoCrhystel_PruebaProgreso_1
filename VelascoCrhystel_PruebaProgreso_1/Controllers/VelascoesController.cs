@@ -57,7 +57,7 @@ namespace VelascoCrhystel_PruebaProgreso_1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Promedio,Nombre,TieneGanasEstudiar,Dia,IdCelular")] Velasco velasco)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,TieneGanasEstudiar,Dia,IdCelular, Promedio")] Velasco velasco)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace VelascoCrhystel_PruebaProgreso_1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Promedio,Nombre,TieneGanasEstudiar,Dia,IdCelular")] Velasco velasco)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,TieneGanasEstudiar,Dia,IdCelular,Promedio")] Velasco velasco)
         {
             if (id != velasco.Id)
             {
