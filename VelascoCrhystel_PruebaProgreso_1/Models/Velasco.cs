@@ -13,6 +13,7 @@ namespace VelascoCrhystel_PruebaProgreso_1.Models
         [Required]
         [MaxLength(50)]
         public string Nombre { get; set; }
+        [Display(Name ="Tiene Ganas de Estudiar?")]
         public bool TieneGanasEstudiar { get; set; }
         [DataType(DataType.Date)]
         public DateTime Dia { get; set; }
