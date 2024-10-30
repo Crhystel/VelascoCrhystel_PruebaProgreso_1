@@ -20,3 +20,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.img-01 {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+}
