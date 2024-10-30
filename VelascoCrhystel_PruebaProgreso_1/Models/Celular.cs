@@ -10,6 +10,7 @@ namespace VelascoCrhystel_PruebaProgreso_1.Models
         [MaxLength(100)]
         public string Modelo { get; set; }
         [Range(2010, 2030)]
+        [Display(Name = "Año")]
         public int Anio { get; set; }
 
         public double Precio { get; set; }
