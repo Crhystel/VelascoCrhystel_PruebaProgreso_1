@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using VelascoCrhystel_PruebaProgreso_1.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<VelascoCrhystel_PruebaProgreso_1Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("VelascoCrhystel_PruebaProgreso_1Context") ?? throw new InvalidOperationException("Connection string 'VelascoCrhystel_PruebaProgreso_1Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
