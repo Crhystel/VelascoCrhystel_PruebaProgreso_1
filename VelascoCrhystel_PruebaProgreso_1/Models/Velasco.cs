@@ -8,8 +8,8 @@ namespace VelascoCrhystel_PruebaProgreso_1.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        [Range(0,11)]
-        public double Promedio { get; set; }
+        [Range(0.0,10.0)]
+        public decimal Promedio { get; set; }
         [Required]
         [MaxLength(50)]
         public string Nombre { get; set; }
